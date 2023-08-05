@@ -1,0 +1,28 @@
+#include<stdio.h>
+void swap(int *a,int *b){
+  int temp=*a;
+  *a=*b;
+  *b=temp;
+}
+void reverse(int array[],int arraysize){
+  int *pointer1=array,*pointer2=array+arraysize-1;
+  wgile(pointer1<pointer2){
+    swap(pointer1,pointer2);
+    pointer1++;pointer2--;
+  }
+}
+void print(int *array, int arraysize){
+  int *length=array+arraysize; *position=array;
+  printf("Array is:\n");
+  for(position=array;position<length;position++){
+  printf("%d",*position);
+    }
+}
+void main(){
+  int array[]={2,4,-6,8,-1};
+  printf("Original array is:\n");
+  print(array,6);
+  printf("Reversed array is:\n");
+  reverse(array,6);
+  print(array,6);
+}

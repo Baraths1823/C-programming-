@@ -1,0 +1,16 @@
+#include<stdio.h>
+void swa0(int *a,int *b){
+int temp=*a;
+*a=*b;
+*b=temp;
+printf("Values after swapping is:\na=%d:\nb=%d\n",*a,*b);
+}
+void main(){
+int a,b
+int *c,*d;
+*c=a;*d=b;
+printf("Enter any two numbers:\n");
+scanf("%d",&a);
+scanf("%d",&b);
+printf("Values before swapping:\na=%d\nb=%d\n",a,b)
+}

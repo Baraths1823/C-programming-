@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main(){
+chat str[]="Drums of Liberation";
+char *s;
+s=str;
+int counter=0,i=0;
+while(s[i]!='\0'){
+counter++;
+i++;
+}
+printf("Size if the given string is:%d\n",counter);
+}
